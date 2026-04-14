@@ -3,7 +3,6 @@
 ##########################
 ## Jeu du Plus ou moins ##
 ##   le jeu du jour 2   ##
-##  spécial Guillaume   ##
 ##########################
 
 
