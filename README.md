@@ -2,6 +2,8 @@
 
 Usage: `./main.sh`
 
+La modif conflit
+
 ## Missing features :
 - [ ] Add "--max" parameter
 - [ ] Use english in messages

@@ -1,9 +1,12 @@
 #!/bin/bash
 
-# Jeu du Plus ou moins
+##########################
+## Jeu du Plus ou moins ##
+##   le jeu du jour 2   ##
+##########################
 
-# TODO: Ask user for max input
-max=50
+
+read -p "Maximum : " max
 target=$((RANDOM % $max + 1))
 
 # Fonction qui va écrire plus ou moins, deux arguments: la cible et la proposition
@@ -32,7 +35,7 @@ while [[ $guess -ne $target ]]; do
 done
 
 # Victoire !
-echo "Vous avez trouvé en $guess_nb coups !"
+echo "Vous avez trouvé en $((guess_nb + 1)) coups !"
 
 read -p "Votre pseudo : " nickname
 echo "$nickname,$guess_nb" >> score.txt
