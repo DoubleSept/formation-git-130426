@@ -6,13 +6,14 @@
 ##  spécial Guillaume   ##
 ##########################
 
-Bonjour les amis !
+	Bonjour les amis !
+
 
 read -p "Maximum : " max
-target=$((RANDOM % $max + 1))
+	target=$((RANDOM % $max + 1))
 
 # Fonction qui va écrire plus ou moins, deux arguments: la cible et la proposition
-print_more_or_less() {
+	print_more_or_less() {
   if [[ $2 -lt $1 ]]; then
     echo "C'est plus"
   elif [[ $2 -gt $1 ]]; then
