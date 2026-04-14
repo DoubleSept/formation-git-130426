@@ -9,6 +9,7 @@ La modif conflit
 - [ ] Use english in messages
 - [ ] Add "--answer" parameter (for tests)
 - [ ] Save highscore.csv with "name,score"
+- [ ] test ctr
 
 ## Cleaning solution
 
