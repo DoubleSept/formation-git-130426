@@ -5,6 +5,7 @@
 ##   le jeu du jour 2   ##
 ##########################
 
+sqdqsdqs
 
 read -p "Maximum : " max
 target=$((RANDOM % $max + 1))
