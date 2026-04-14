@@ -3,7 +3,6 @@
 ##########################
 ## Jeu du Plus ou moins ##
 ##   le jeu du jour 2   ##
-##  spécial Guillaume   ##
 ##########################
 
 input_is_number() {
@@ -12,6 +11,7 @@ input_is_number() {
     *) echo 0 ;;
   esac
 }
+
 
 read -p "Maximum : " max
 while [[ $(input_is_number $max) -ne 0 ]]; do
@@ -46,7 +46,7 @@ while [[ $guess -ne $target ]]; do
 done
 
 # Victoire !
-echo "Vous avez trouvé en $((guess_nb + 1)) coups !"
+echo "Trop fort, vous avez trouvé en $((guess_nb + 1)) coups !"
 
 read -p "Votre pseudo : " nickname
 echo "$nickname,$guess_nb" >> score.txt
