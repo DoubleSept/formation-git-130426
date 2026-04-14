@@ -36,7 +36,7 @@ while [[ $guess -ne $target ]]; do
 done
 
 # Victoire !
-echo "Vous avez trouvé en $((guess_nb + 1)) coups !"
+echo "Trop fort,vous avez trouvé en $((guess_nb + 1)) coups !"
 
 read -p "Votre pseudo : " nickname
 echo "$nickname,$guess_nb" >> score.txt
