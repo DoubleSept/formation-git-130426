@@ -6,7 +6,7 @@
 ##  spécial Guillaume   ##
 ##########################
 
-sqdqsdqs
+Bonjour les amis !
 
 read -p "Maximum : " max
 target=$((RANDOM % $max + 1))
