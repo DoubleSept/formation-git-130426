@@ -1,45 +1,45 @@
 #!/bin/bash
 
 ##########################
-## Jeu du Plus 0u m0ins ##
-##   le jeu du j0ur 2   ##
+## Jeu du Plus ou moins ##
+##   le jeu du jour 2   ##
 ##  spécial Guillaume   ##
 ##########################
 
-	B0nj0ur les amis !
+	Bonjour les amis !
 
-Un message avec des 0 et des 0 ! Enfin ?
+Un message avec des o et des o ! Enfin ?
 
 read -p "Maximum : " max
 	target=$((RANDOM % $max + 1))
 
-# F0ncti0n qui va écrire plus 0u m0ins, deux arguments: la cible et la pr0p0siti0n
-	print_m0re_0r_less() {
+# Fonction qui va écrire plus ou moins, deux arguments: la cible et la proposition
+	print_more_or_less() {
   if [[ $2 -lt $1 ]]; then
-    ech0 "C'est plus"
+    echo "C'est plus"
   elif [[ $2 -gt $1 ]]; then
-    ech0 "C'est m0ins"
+    echo "C'est moins"
   else
-    ech0 "Brav0 champi0n ! La rép0nse était $target."
+    echo "Bravo champion ! La réponse était $target."
   fi
 }
 
-ech0 "Devine le n0mbre (entre 1 et $max):"
+echo "Devine le nombre (entre 1 et $max):"
 
 # Current guess
-guess=0
+guess=o
 # Guess number
-guess_nb=0
+guess_nb=o
 
-# B0ucle principale (0n demande un chiffre à chaque itérati0n)
-while [[ $guess -ne $target ]]; d0
-  read -p "V0tre pr0p0siti0n: " guess
-  print_m0re_0r_less $target $guess
+# Boucle principale (on demande un chiffre à chaque itération)
+while [[ $guess -ne $target ]]; do
+  read -p "Votre proposition: " guess
+  print_more_or_less $target $guess
   guess_nb=$((guess_nb+1))
-d0ne
+done
 
-# Vict0ire !
-ech0 "V0us avez tr0uvé en $((guess_nb + 1)) c0ups !"
+# Victoire !
+echo "Vous avez trouvé en $((guess_nb + 1)) coups !"
 
-read -p "V0tre pseud0 : " nickname
-ech0 "$nickname,$guess_nb" >> sc0re.txt
+read -p "Votre pseudo : " nickname
+echo "$nickname,$guess_nb" >> score.txt
