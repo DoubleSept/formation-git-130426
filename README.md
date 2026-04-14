@@ -21,3 +21,5 @@ Delete all branches:
 
 Delete all tags:
 `git tag | xargs -r git tag -d`
+
+## Change jol812

@@ -5,9 +5,19 @@
 ##   le jeu du jour 2   ##
 ##########################
 
-sqdqsdqs
+input_is_number() {
+  case $1 in
+    ''|*[!0-9]*) echo 1 ;;
+    *) echo 0 ;;
+  esac
+}
+
 
 read -p "Maximum : " max
+while [[ $(input_is_number $max) -ne 0 ]]; do
+  echo "$max is not a number !"
+  read -p "Maximum : " max
+done
 target=$((RANDOM % $max + 1))
 
 # Fonction qui va écrire plus ou moins, deux arguments: la cible et la proposition
