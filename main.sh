@@ -8,6 +8,7 @@
 
 	Bonjour les amis !
 
+Un message avec des o et des 0 !
 
 read -p "Maximum : " max
 	target=$((RANDOM % $max + 1))
