@@ -10,7 +10,7 @@ La modif conflit
 - [ ] Add a comment on user result
 - [ ] Add "--answer" parameter (for tests)
 - [ ] Save highscore.csv with "name,score"
-- [ ] test ctr
+- [ ] Add line exercice
 
 ## Cleaning solution
 
